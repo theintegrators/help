@@ -14,7 +14,7 @@ tar xvf tailscale.tgz
 
 3. Make install directory
 ```
-mkdir /usr/local/bin
+sudo mkdir /usr/local/bin
 ```
 
 4. install files
