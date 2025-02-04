@@ -1,6 +1,6 @@
 # Logging
 
-1. Create a logroate conf file
+1. Create a logrotate conf file
 ```
 sudo touch /etc/logrotate.d/<APPLICATION_NAME>.conf
 ```
