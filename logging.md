@@ -18,7 +18,6 @@ sudo touch /etc/logrotate.d/<APPLICATION_NAME>.conf
     delaycompress
     copytruncate
 }
-
 ```
 
 3. Create log file
