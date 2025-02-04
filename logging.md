@@ -1,5 +1,6 @@
 # Logging
 
+## Configuring the log file
 1. Create a logrotate conf file
 ```
 sudo touch /etc/logrotate.d/<APPLICATION_NAME>.conf
@@ -28,4 +29,17 @@ sudo touch /var/log/<APPLICATION_NAME>.log
 4. Change write permissions
 ```
 sudo chmod 666 /var/log/<APPLICATION_NAME>.log
+```
+
+## Logging to the file
+
+Just append to the file
+```
+echo "my msg" >> /var/log/<APPLICATION_NAME>.log
+```
+
+## View logs
+
+```
+tail -f /var/log/<APPLICATION_NAME>.log
 ```
