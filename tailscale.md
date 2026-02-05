@@ -16,9 +16,10 @@ sudo mkdir /usr/local/bin
 ```
 
 4. install files
+The directory extension may change over time
 ```
-cd ./tailscale
-sudo install -o root -g root -m 755 tailscale tailscaled tailscale.state /usr/local/bin
+cd ./tailscale.0_arm
+sudo install -o root -g root -m 755 tailscale tailscaled /usr/local/bin
 ```
 
 5. create init.d file at /etc/init.d/tailscale
