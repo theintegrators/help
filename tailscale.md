@@ -39,12 +39,12 @@ sudo touch /etc/init.d/tailscaled && sudo chmod +x /etc/init.d/tailscaled
 # Description:       A simple script to start/stop tailscaled
 ### END INIT INFO
 
-DAEMON="/usr/local/bin/tailscaled --statedir=/var/lib/tailscale"
+DAEMON="/usr/local/bin/tailscaled"
 PIDFILE="/var/run/tailscaled.pid"
 
 start() {
     echo "Starting tailscaled..."
-    start-stop-daemon --start --background --make-pidfile --pidfile $PIDFILE --exec $DAEMON
+    start-stop-daemon --start --background --make-pidfile --pidfile $PIDFILE --exec $DAEMON -- --statedir=/var/lib/tailscale
     echo "tailscaled started."
 }
 
