@@ -16,16 +16,14 @@ sudo mkdir /usr/local/bin
 ```
 
 4. install files
-The directory extension may change over time
+
 ```
-cd ./tailscale.0_arm
-sudo install -o root -g root -m 755 tailscale tailscaled /usr/local/bin
+cd ./tailscale_1.80.0_arm && sudo install -o root -g root -m 755 tailscale tailscaled /usr/local/bin
 ```
 
 5. create init.d file at /etc/init.d/tailscale
 ```
-sudo touch /etc/init.d/tailscaled
-sudo chmod +x /etc/init.d/tailscaled
+sudo touch /etc/init.d/tailscaled && sudo chmod +x /etc/init.d/tailscaled
 ```
 
 6. paste contents into the file
