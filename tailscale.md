@@ -79,10 +79,10 @@ sudo update-rc.d tailscaled defaults
 8. start/stop tailscaled manually
 ```
 sudo /etc/init.d/tailscaled start
+sudo /etc/init.d/tailscale stop
+```
 
 9. Turn off DNS
 ```
 sudo tailscale up --accept-dns=false
-```
-sudo /etc/init.d/tailscale stop
 ```
